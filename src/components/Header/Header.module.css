@@ -1,0 +1,99 @@
+.header {
+	background-color: #4caf50;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.pic {
+	margin-left: 1em;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	position: relative;
+}
+
+.nav {
+	display: flex;
+	gap: 20px;
+	flex-grow: 1;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.nav a {
+	margin: 0 10px;
+	color: white;
+	text-decoration: none;
+	transition:
+		color 0.3s,
+		transform 0.3s;
+}
+
+.nav a:hover {
+	color: #3f572c;
+	transform: scale(1.1);
+}
+
+.pic .homeIcon {
+	color: #ddd;
+	width: 100%;
+	height: 100%;
+	transition:
+		color 0.3s,
+		transform 0.3s;
+}
+
+.pic .homeIcon:hover {
+	color: #3f572c;
+	transform: scale(1.1);
+}
+
+.logout {
+	margin-right: 1em;
+	width: 30px;
+	height: 30px;
+	position: relative;
+}
+
+.logoutIcon {
+	color: #ddd;
+	width: 100%;
+	height: 100%;
+	transition:
+		color 0.3s,
+		transform 0.3s;
+}
+
+.logoutIcon:hover {
+	color: #3f572c;
+	transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+	.header {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 10px;
+		width: 100%;
+	}
+
+	.nav {
+		justify-content: flex-start;
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.nav a {
+		margin: 5px 0;
+	}
+
+	.pic,
+	.logout {
+		margin: 10px 0;
+	}
+}
