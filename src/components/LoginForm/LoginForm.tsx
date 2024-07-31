@@ -24,7 +24,7 @@ const LoginForm: React.FC = () => {
 			);
 			const token = (await userCredential.user.uid) as string;
 
-			console.log('TOKE', token);
+			console.log('TOKEN', token);
 
 			const studentData: Student = await getStudentByToken(token as string);
 

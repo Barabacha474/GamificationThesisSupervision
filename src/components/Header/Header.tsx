@@ -22,7 +22,7 @@ const Header: React.FC = () => {
 			</div>
 
 			<nav className={styles.nav}>
-				<Link href="/about">About</Link>
+				<Link href="/about">About us</Link>
 				<Link href="/researches">Researches</Link>
 				<Link href="/students">Your Students</Link>
 				<Link href="/profile">Profile</Link>

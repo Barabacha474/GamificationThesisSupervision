@@ -47,7 +47,8 @@ const StudentDetailsPage: React.FC = () => {
 					<h1 className={styles.h1}>{student.name}</h1>
 					<p className={styles.p}>Email: {student.email}</p>
 					<p className={styles.p}>Number: {student.number}</p>
-					<p className={styles.p}>About me: {student.about}</p>
+					{/* <p className={styles.p}>About me: {student.about}</p> */}
+					<p className={`${styles.workItem}`}><h3>About me</h3> {student.about}</p>
 					<h2 className={styles.h2}>Works</h2>
 					{student.works.map((work, index) => (
 						<div key={index} className={styles.workItem}>

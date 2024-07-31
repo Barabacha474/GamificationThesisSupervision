@@ -19,7 +19,7 @@ const Home: React.FC = () => {
 				<h2 className={styles.title}>EAP Thesis Hub</h2>
 				<nav className={styles.nav}>
 					<Link href="/about" className={styles.navLink}>
-						About
+						About us
 					</Link>
 				</nav>
 			</header>
